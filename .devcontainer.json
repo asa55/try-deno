@@ -7,9 +7,7 @@
                 "GitHub.copilot",
                 "denoland.vscode-deno"
             ]
-        },
-        
-        "postCreateCommand": "curl -fsSL https://deno.land/install.sh | sh && echo 'export PATH=\"$HOME/.deno/bin:$PATH\"' >> ~/.bashrc",
-        "postStartCommand": "export PATH=\"$HOME/.deno/bin:$PATH\""
-    }
+        }
+    },
+    "postCreateCommand": "curl -fsSL https://deno.land/install.sh | sh && export PATH=\"$HOME/.deno/bin:$PATH\" && echo 'export PATH=\"$HOME/.deno/bin:$PATH\"' >> ~/.bashrc",
 }
